@@ -3,11 +3,11 @@ import { Item } from '../item';
 import { ItemService } from '../item.service';
 
 @Component({
-  selector: 'app-heroes',
-  templateUrl: './items.component.html',
-  styleUrls: ['./items.component.css']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class ItemsComponent implements OnInit {
+export class DashboardComponent implements OnInit {
   items: Item[] = [];
 
   constructor(private itemService: ItemService) { }
@@ -18,6 +18,6 @@ export class ItemsComponent implements OnInit {
 
   getItems(): void {
     this.itemService.getItems()
-      .subscribe(items => this.items = items);
+      .subscribe(items => this.items = items.slice(1, 5));
   }
 }

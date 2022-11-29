@@ -1,13 +1,8 @@
-
-<h2>My Catalog</h2>
+<h2>My Heroes</h2>
 <ul class="items">
   <li *ngFor="let item of items">
-    <button type="button" (click)="onSelect(item)">
-      <span class="badge">{{item.id}}</span>
-      <span class="name">{{item.name}}</span>
-    </button>
+    <a routerLink="/detail/{{item.id}}">
+      <span class="badge">{{item.id}}</span> {{item.name}}
+    </a>
   </li>
 </ul>
-
-<!-- <app-hero-detail [item]="selectedItem"></app-hero-detail>
--->
