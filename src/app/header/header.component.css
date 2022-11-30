@@ -30,6 +30,7 @@ nav a {
       display:block;
       margin: 0 auto;
       background-color:bisque;
+      
   }
 
   .header3{
@@ -41,4 +42,8 @@ nav a {
   .header3 h1{
       vertical-align: middle;
       display:table-cell;
+  }
+
+  .p {
+      float:right;
   }
