@@ -8,13 +8,18 @@ import { ItemsComponent } from './items/items.component';
 import { MessagesComponent } from './messages/messages.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ItemsComponent,
     ItemDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

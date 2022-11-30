@@ -1,0 +1,44 @@
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+  float:right;
+}
+  nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+
+  nav a:active {
+    background-color: black;
+  }
+
+  .header1{
+      width:100%;
+      height: 80px;
+      display:block;
+      vertical-align:central;
+  }
+
+  .header2{
+      width:1000px;
+      height:100%;
+      display:block;
+      margin: 0 auto;
+      background-color:bisque;
+  }
+
+  .header3{
+      height:100%;
+      display:table;
+      float:left;
+  }
+
+  .header3 h1{
+      vertical-align: middle;
+      display:table-cell;
+  }

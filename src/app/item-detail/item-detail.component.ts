@@ -14,17 +14,17 @@ export class ItemDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: ItemService,
+    private itemService: ItemService,
     private location: Location
   ) { }
 
   ngOnInit(): void {
-    this.getHero();
+    this.getItem();
   }
 
-  getHero(): void {
+  getItem(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.heroService.getItem(id)
+    this.itemService.getItem(id)
       .subscribe(item => this.item = item);
   }
 
