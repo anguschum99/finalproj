@@ -1,12 +1,14 @@
-<div *ngIf="item">
-  <h2>{{item.name | uppercase}} Details</h2>
+<h1 *ngIf="item">{{item.name | uppercase}} Details</h1>
+<div class = "items-details" *ngIf="item">
+  <br>
   <img [src]="item.img">
-  <div><span>id: </span>{{item.id}}</div>
-  <div>Desc: {{item.desc}}</div>
+  <div><span>ID: </span>{{item.id}}</div>
+  <div><span>Price: </span> ${{item.price}}</div>
+  <div>Description: {{item.desc}}</div>
   <div>
-    <label for="item-name">Item name: </label>
+    <label for="item-name">Item Name: </label>
     <input id="item-name" [(ngModel)]="item.name" placeholder="Item name" />
   </div>
   <div></div>
-  <button type="button" (click)="goBack()">Go back</button>
+  <button type="button" (click)="goBack()">Go Back</button>
 </div>

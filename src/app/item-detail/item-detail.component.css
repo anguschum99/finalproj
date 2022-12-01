@@ -1,6 +1,24 @@
+h1 {
+  text-align: center;
+  color:#fff;
+  background-color:#3f525c;
+  border-radius: 2px;
+  padding: 1rem;
+  width: 20%;
+  margin: 2rem auto;
+}
+
+.items-details {
+   text-align: center;
+   background-color: #3f525c;
+   color: #fff;
+   font-size: 1.2rem;
+   width: 50%;
+   margin: 2rem auto;
+}
 
 label {
-  color: #435960;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -27,6 +45,6 @@ button {
     cursor: auto;
   }
 img {
-  width:200px;
-  height:200px;
+  width:400px;
+  height:400px;
 }

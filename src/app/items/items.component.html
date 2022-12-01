@@ -1,8 +1,11 @@
-<h2>Items</h2>
-<ul class="items">
-  <li *ngFor="let item of items">
-    <a routerLink="/detail/{{item.id}}">
-      <span class="badge">{{item.id}}</span> {{item.name}}
-    </a>
-  </li>
-</ul>
+<h1>Products</h1>
+<div class="items-menu">
+  <a *ngFor="let item of items"
+     routerLink="/detail/{{item.id}}">
+    <img [src]="item.img">
+    <br>
+    <span id="price">${{item.price}}</span> {{item.name}} 
+    <br>
+    <span id="desc">"{{item.desc}}"</span>
+  </a>
+</div>
