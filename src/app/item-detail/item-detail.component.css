@@ -26,3 +26,7 @@ button {
     color: #ccc;
     cursor: auto;
   }
+img {
+  width:200px;
+  height:200px;
+}
