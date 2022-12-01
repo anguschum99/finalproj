@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  currentDate: Date = new Date();
+  currentDate = new Date();
+  timestamp = this.currentDate.toLocaleString('en-US', 
+  {month:'short', day:'2-digit', 
+  year:'numeric', hour:'numeric', minute:'numeric'});
 
 }
