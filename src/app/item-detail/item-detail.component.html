@@ -1,5 +1,6 @@
 <div *ngIf="item">
   <h2>{{item.name | uppercase}} Details</h2>
+  <img [src]="item.img">
   <div><span>id: </span>{{item.id}}</div>
   <div>Desc: {{item.desc}}</div>
   <div>
@@ -7,5 +8,5 @@
     <input id="item-name" [(ngModel)]="item.name" placeholder="Item name" />
   </div>
   <div></div>
-  <button type="button" (click)="goBack()">go back</button>
+  <button type="button" (click)="goBack()">Go back</button>
 </div>
