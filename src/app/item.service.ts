@@ -12,7 +12,7 @@ export class ItemService {
   constructor(private messageService: MessageService) { }
 
   getItems(): Observable<Item[]> {
-    const items = of(ITEMS);
+    var items = of(ITEMS.sort((a,b) => (a.counter > b.counter ? -1 : 1)));
     this.messageService.add('ItemService: fetched items');
     return items;
   }
@@ -20,6 +20,8 @@ export class ItemService {
   getItem(id: number): Observable<Item> {
     const item = ITEMS.find(h => h.id === id)!;
     this.messageService.add(`ItemService: fetched item id=${id}`);
+    ITEMS[ITEMS.findIndex(elem => elem['id'] == id)].counter += 1;
+
     return of(item);
   }
 }
