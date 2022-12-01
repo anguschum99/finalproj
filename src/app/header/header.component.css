@@ -21,7 +21,7 @@ nav a {
       width:100%;
       height: 80px;
       display:block;
-      vertical-align:central;
+      
   }
 
   .header2{
@@ -47,3 +47,7 @@ nav a {
   .p {
       float:right;
   }
+img{
+  width: 30px;
+  height:30px;
+}
