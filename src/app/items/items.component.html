@@ -1,7 +1,7 @@
 <h1>Products</h1>
 <div class="items-menu">
   <a *ngFor="let item of items"
-     routerLink="/detail/{{item.id}}">
+     routerLink="/items/{{item.id}}">
     <img [src]="item.img">
     <br>
     <span id="price">${{item.price}}</span> {{item.name}}
