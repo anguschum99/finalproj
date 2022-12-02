@@ -1,8 +1,0 @@
-<h2>Top Items</h2>
-<div class="items-menu">
-  <a *ngFor="let item of items"
-     routerLink="/detail/{{item.id}}">
-    <img [src]="item.img"><br>
-    {{item.name}}
-  </a>
-</div>
